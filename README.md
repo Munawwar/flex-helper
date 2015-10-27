@@ -6,7 +6,7 @@ This tries to achieve the same for the web and with CSS only.
 
 ### Usage
 
-Just add boxlayout.css to your code and start using the CSS classes documented (See them in action with examples.html).
+Just add boxlayout.css to your code and start using the CSS classes documented (See them in action in examples.html).
 
 ### Documentation
 
