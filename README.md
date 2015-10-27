@@ -4,6 +4,10 @@ HBox and VBox layout with pure css (flexbox)
 Box layouts HBox and VBox layouts have been implementated with many UI toolkits on different platforms and languages (example ExtJS,QT,GTK,.NET...).
 This tries to achieve the same for the web and with CSS only.
 
+### Usage
+
+Just add boxlayout.css to your code and start using the CSS classes documented (See them in action with examples.html).
+
 ### Documentation
 
 - vbox - Stack child items vertically (the "main axis" for child items now becomes the vertical axis)
