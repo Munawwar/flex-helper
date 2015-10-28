@@ -1,7 +1,7 @@
-# boxlayout
-HBox and VBox layout with pure css (flexbox)
+# Box Layout
+HBox and VBox layout with pure css (flexbox).
 
-Box layout (HBox and VBox layouts) is a layout system that have been implementated with many UI toolkits on different platforms and languages (example ExtJS,QT,GTK,.NET...).
+Box layout (often known as HBox and VBox layouts) is a UI layout system/concept that have been implementated, in the past, by many popular UI toolkits on different platforms and languages (example ExtJS,QT,GTK,.NET,Android,Kivy...).
 This tries to achieve the same for the web and with CSS only.
 
 ### Usage
