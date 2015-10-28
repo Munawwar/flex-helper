@@ -13,14 +13,14 @@ If you are thinking: "Why do I need a library when I can use CSS3 flexbox direct
 
 ### Usage
 
-Add **boxlayout.css** to your code and start using the CSS classes documented (See them in action in examples.html).
+Add **box-layout.css** to your code and start using the CSS classes documented (See them in action in examples.html).
 
 ### Documentation
 
 ```
 vbox          - Stack child items vertically (the "main axis" for child items is now
                 the vertical axis)
-hbox          - Stack child items horizontally (the "main axis" for child items is now 
+hbox          - Stack child items horizontally (the "main axis" for child items is now
                 the horizontal axis)
 flex          - Stretch item along parent's main-axis
 stretch       - Stretch item along parent's cross-axis
