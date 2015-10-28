@@ -20,8 +20,8 @@ Add **boxlayout.css** to your code and start using the CSS classes documented (S
 ```
 vbox          - Stack child items vertically (the "main axis" for child items now becomes
                 the vertical axis)
-hbox          - Stack child items horizontally (the "main axis" for child items now becomes
-                the horizontal axis)
+hbox          - Stack child items horizontally (the "main axis" for child items now 
+                becomes the horizontal axis)
 flex          - Stretch item along parent's main-axis
 stretch       - Stretch item along parent's cross-axis
 
