@@ -39,4 +39,4 @@ wrap          - Wrap child items to next line on main-axis
 ```
 
 ### Documentation with examples
-See them in action with examples.html.
+[See them in action with examples.html](http://munawwar.github.io/box-layout/examples.html]).
