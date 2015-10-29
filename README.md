@@ -13,7 +13,7 @@ If you are thinking: "Why do I need a library when I can use CSS3 flexbox direct
 
 ### Usage
 
-Add **box-layout.css** to your code and start using the CSS classes documented ([See them in action with examples.html](http://munawwar.github.io/box-layout/examples.html])).
+Add **box-layout.css** to your code and start using the CSS classes documented ([See them in action with examples.html](http://munawwar.github.io/box-layout/examples.html)).
 
 ### Documentation
 
@@ -39,4 +39,4 @@ wrap          - Wrap child items to next line on main-axis
 ```
 
 ### Documentation with examples
-[See them in action with examples.html](http://munawwar.github.io/box-layout/examples.html]).
+[See them in action with examples.html](http://munawwar.github.io/box-layout/examples.html).
