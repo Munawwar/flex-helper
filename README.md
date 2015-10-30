@@ -1,19 +1,9 @@
-# Box Layout
-This library can be described in two ways:
-* HBox and VBox layout with pure CSS (flexbox).
-* CSS3 flexbox helper classes.
-
-### What is box layout?
-Box layout (often known as HBox and VBox layouts) is a UI layout system/concept that have been implementated, in the past, by many popular UI toolkits on different platforms and languages (example ExtJS,QT,GTK,.NET,Android,Kivy...).
-
-This project achieves the same for the web and with CSS only.
-
-### Why?
-If you are thinking: "Why do I need a library when I can use CSS3 flexbox directly?", then the answer to you is that this library ultimately simplifies CSS3 flexbox spec for you. It is easier to remember and hence easier to use. Furthermore the helper classes can achieve almost all the layouts in the original flexbox standard (inspite of it using a subset of the standard).
+# Flex helper
+CSS3 flexbox helper classes. The helper CSS classes mimic box layout systems of popular UI toolkits (like QT, GTK, .NET, Android, Kivy, ExtJS...).
 
 ### Usage
 
-Add **box-layout.css** to your code and start using the CSS classes documented ([See them in action with examples.html](http://munawwar.github.io/box-layout/examples.html)).
+Add **flex-helper.css** to your code and start using the CSS classes documented ([See them in action with examples.html](http://munawwar.github.io/box-layout/examples.html)).
 
 ### Documentation
 
