@@ -5,7 +5,7 @@ The helper CSS classes mimic box layout systems of popular UI toolkits (like QT,
 
 ### Usage
 
-Add **flex-helper.css** to your code and start using the CSS classes documented ([See them in action with examples.html](http://munawwar.github.io/box-layout/examples.html)).
+Add **flex-helper.css** to your code and start using the CSS classes documented ([See them in action with examples.html](http://munawwar.github.io/flex-helper/examples.html)).
 
 ### Documentation
 
@@ -31,4 +31,4 @@ wrap          - Wrap child items to next line on main-axis
 ```
 
 ### Documentation with examples
-[See them in action with examples.html](http://munawwar.github.io/box-layout/examples.html).
+[See them in action with examples.html](http://munawwar.github.io/flex-helper/examples.html).
