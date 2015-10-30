@@ -1,5 +1,7 @@
 # Flex helper
-CSS3 flexbox helper classes. The helper CSS classes mimic box layout systems of popular UI toolkits (like QT, GTK, .NET, Android, Kivy, ExtJS...).
+CSS3 flexbox helper classes.
+
+The helper CSS classes mimic box layout systems of popular UI toolkits (like QT, GTK, .NET, Android, Kivy, ExtJS...).
 
 ### Usage
 
