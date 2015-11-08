@@ -87,8 +87,9 @@
                     <div class="teal">Auto width</div>
                 </div>
             </div>
-            Note: By default items stretch along the cross-axis.
         </div>
+        <div>Note: By default items stretch along the cross-axis.</div>
+        <div>&nbsp;</div>
 
         <div class="hbox">
             <div>
@@ -106,7 +107,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="hbox">
             <div>
                 <h2>vbox cross-center</h2>
@@ -177,22 +178,22 @@
                 Note: This can replace display: inline-block + vertical-align: middle.
             </div>
             <div class="window gray hbox main-center cross-center wrap">
-                <div class="teal">These are </div>
-                <div class="amber">items with </div>
-                <div class="teal">auto width.</div>
-                <div class="teal">Item</div>
-                <div class="amber">Item</div>
-                <div class="teal">Item</div>
-                <div class="teal">These are </div>
-                <div class="amber">items with </div>
-                <div class="teal">auto width.</div>
+                <div class="teal">These are items with auto width.&nbsp;</div>
+
+                <div class="amber">Lorem&nbsp;</div>
+                <div class="teal">ipsum&nbsp;</div>
+                <div class="amber">dolor&nbsp;</div>
+
+                <div class="teal">sit amet,&nbsp;</div>
+                <div class="amber">consectetur adipiscing&nbsp;</div>
+                <div class="teal">elit.</div>
             </div>
         </div>
 
         <div>
             <h3>Caveat</h3>
             <div>
-                If you want html and body element to expand to viewport, you'll have to set html and body with 100% height.<br/>
+                If you want body element to expand to viewport, you'll have to set html and body to 100% height.<br/>
                 And then add vbox or hbox css class on body to enable flexbox on child items.<br>
                 <script type="text/html"><head>
     <style>
@@ -220,7 +221,7 @@
                 else vbox will render weird (min-height and min-width doesn't fix them either).<br>
                 The following won't look fine on IE 10,11 (it looks fine on MS Edge):
                 <div style="position: relative;">
-                    <div class="vbox" style="position: absolute; top: 0; left: 45%; min-height: 100px;">
+                    <div class="vbox" style="position: absolute; top: 0; left: 30%; min-height: 100px;">
                         <div class="blue">Auto height vbox item</div>
                         <div class="amber flex hbox">
                             <span class="red">Auto width hbox item</span>
