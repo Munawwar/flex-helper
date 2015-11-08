@@ -87,23 +87,7 @@
                     <div class="teal">Auto width</div>
                 </div>
             </div>
-        </div>
-
-        <div class="hbox">
-            <div>
-                <h2>vbox cross-center</h2>
-                <h5>(with single child)</h5>
-                <div class="window gray vbox cross-center">
-                    <div class="orange">cross-centered div</div>
-                </div>
-            </div>
-            <div style="margin-left: 20px;">
-                <h2>hbox cross-center</h2>
-                <h5>(with single child)</h5>
-                <div class="window gray hbox cross-center">
-                    <div class="orange">cross-centered div</div>
-                </div>
-            </div>
+            Note: By default items stretch along the cross-axis.
         </div>
 
         <div class="hbox">
@@ -119,6 +103,23 @@
                 <h5>(single child)</h5>
                 <div class="window gray hbox main-center">
                     <div class="orange">main-centered div</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hbox">
+            <div>
+                <h2>vbox cross-center</h2>
+                <h5>(with single child)</h5>
+                <div class="window gray vbox cross-center">
+                    <div class="orange">cross-centered div</div>
+                </div>
+            </div>
+            <div style="margin-left: 20px;">
+                <h2>hbox cross-center</h2>
+                <h5>(with single child)</h5>
+                <div class="window gray hbox cross-center">
+                    <div class="orange">cross-centered div</div>
                 </div>
             </div>
         </div>
@@ -160,13 +161,13 @@
         <div>
             <h2>hbox inside vbox</h2>
             <div class="window vbox">
-                <div class="blue">Auto height</div>
+                <div class="blue">Auto height vbox item</div>
                 <div class="amber flex hbox">
-                    <span class="red">Item 1</span>
-                    <span class="amber flex">Item 2 - flex</span>
-                    <span class="pink">Item 3</span>
+                    <span class="red">Auto width hbox item</span>
+                    <span class="amber flex">Flex width hbox item</span>
+                    <span class="pink">Auto width hbox item</span>
                 </div>
-                <div class="teal">Auto height</div>
+                <div class="teal">Auto height vbox item</div>
             </div>
         </div>
 
@@ -191,8 +192,8 @@
         <div>
             <h3>Caveat</h3>
             <div>
-                If you want html and body element to expand to viewport, you'll have to set height as 100%.<br/>
-                And then add vbox or hbox css class on body to use flexbox to child items.<br>
+                If you want html and body element to expand to viewport, you'll have to set html and body with 100% height.<br/>
+                And then add vbox or hbox css class on body to enable flexbox on child items.<br>
                 <script type="text/html"><head>
     <style>
         html, body { height: 100%; }
@@ -220,13 +221,13 @@
                 The following won't look fine on IE 10,11 (it looks fine on MS Edge):
                 <div style="position: relative;">
                     <div class="vbox" style="position: absolute; top: 0; left: 45%; min-height: 100px;">
-                        <div class="blue">Auto height</div>
+                        <div class="blue">Auto height vbox item</div>
                         <div class="amber flex hbox">
-                            <span class="red">Item 1</span>
-                            <span class="amber flex">Item 2 - flex</span>
-                            <span class="pink">Item 3</span>
+                            <span class="red">Auto width hbox item</span>
+                            <span class="amber flex">Flex width hbox item</span>
+                            <span class="pink">Auto width hbox item</span>
                         </div>
-                        <div class="teal">Auto height</div>
+                        <div class="teal">Auto height vbox item</div>
                     </div>
                 </div>
             </div>
