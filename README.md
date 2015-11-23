@@ -15,7 +15,6 @@ vbox          - Stack child items vertically (the "main axis" for child items is
 hbox          - Stack child items horizontally (the "main axis" for child items is now
                 the horizontal axis)
 flex          - Stretch item along parent's main-axis
-stretch       - Stretch item along parent's cross-axis
 
 main-start    - Stack child items to the main-axis start
 main-center   - Stack child items to the main-axis center
@@ -25,8 +24,11 @@ cross-start,
 cross-center,
 cross-end     - Similar to the 'main' counterparts, except that
                 these decide the stacking of child items along the cross-axis.
-
 cross-stretch - Stretch child items along the cross-axis
+
+stretch-self  - Stretch item along parent's cross-axis. Overrides any cross-* class behavior on parent.
+center-self   - Centers item along parent's cross-axis. Overrides any cross-* class behavior on parent.
+
 wrap          - Wrap child items to next line on main-axis
 ```
 
