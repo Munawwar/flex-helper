@@ -40,7 +40,7 @@
 }
 /*Center item along parent's cross-axis. Overrides any cross-* class of parent*/
 .center-self {
-    align-self: stretch;
+    align-self: center;
 }
 
 /*Stack child items to the main-axis start*/
