@@ -34,8 +34,12 @@
     -ms-flex: 1;
     flex: 1;
 }
-/*Stretch item along parent's cross-axis*/
-.stretch {
+/*Stretch item along parent's cross-axis Overrides any cross-* class of parent*/
+.stretch-self {
+    align-self: stretch;
+}
+/*Center item along parent's cross-axis. Overrides any cross-* class of parent*/
+.center-self {
     align-self: stretch;
 }
 
