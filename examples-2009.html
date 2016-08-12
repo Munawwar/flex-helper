@@ -164,29 +164,11 @@
             <div class="window vbox">
                 <div class="blue">Auto height vbox item</div>
                 <div class="amber flex hbox">
-                    <span class="red">Auto width hbox item</span>
-                    <span class="amber flex">Flex width hbox item</span>
-                    <span class="pink">Auto width hbox item</span>
+                    <span class="red vbox">Auto width hbox item</span>
+                    <span class="amber flex vbox">Flex width hbox item</span>
+                    <span class="pink vbox">Auto width hbox item</span>
                 </div>
                 <div class="teal">Auto height vbox item</div>
-            </div>
-        </div>
-
-        <div>
-            <h2>hbox with wrapping</h2>
-            <div>
-                Note: This can replace display: inline-block + vertical-align: middle.
-            </div>
-            <div class="window gray hbox main-center cross-center wrap">
-                <div class="teal">These are items with auto width.&nbsp;</div>
-
-                <div class="amber">Lorem&nbsp;</div>
-                <div class="teal">ipsum&nbsp;</div>
-                <div class="amber">dolor&nbsp;</div>
-
-                <div class="teal">sit amet,&nbsp;</div>
-                <div class="amber">consectetur adipiscing&nbsp;</div>
-                <div class="teal">elit.</div>
             </div>
         </div>
 
@@ -232,6 +214,8 @@
                     </div>
                 </div>
             </div>
+            <h3>UC Browser</h3>
+            <div>Wrapping of child items (when there isn't enough space to fit child items in single line) doesn't work in UC browser.</div>
         </div>
     </body>
 </html>
