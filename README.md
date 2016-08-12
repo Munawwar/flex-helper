@@ -11,11 +11,11 @@ Add **flex-helper.css** to your code and start using the CSS classes documented 
 
 flex-helper.css supports Edge 13+, Safari 9 and latest Chrome and Firefox.
 
-In the [legacy folder](https://github.com/Munawwar/flex-helper/tree/master/legacy)
+For older browsers support, use:
 
-    flex-helper-2012.css supports IE 10+ and Safari 7+ as well.
+legacy/flex-helper-2012.css for supporting IE 10+ and Safari 7+ as well.
 
-    and flex-helper-2009.css supports UC Browser and Safari 6+ as well.
+or legacy/flex-helper-2009.css for supporting IE 10+, UC Browser and Safari 6+ as well.
 
 ### Documentation
 
@@ -47,6 +47,6 @@ wrap          - Wrap child items to next line on main-axis
 
 For older browser support:
 
-See flexbox-2012.css examples [here](http://munawwar.github.io/flex-helper/legacy/examples-2012.html)
+See flexbox-2012.css examples [here](http://munawwar.github.io/flex-helper/legacy/examples-2012.html).
 
-See flexbox-2009.css examples [here](http://munawwar.github.io/flex-helper/legacy/examples-2009.html)
+See flexbox-2009.css examples [here](http://munawwar.github.io/flex-helper/legacy/examples-2009.html).
