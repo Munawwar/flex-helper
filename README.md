@@ -7,6 +7,12 @@ The helper CSS classes mimic box layout systems of popular UI toolkits (like QT,
 
 Add **flex-helper.css** to your code and start using the CSS classes documented ([See them in action with examples.html](http://munawwar.github.io/flex-helper/examples.html)).
 
+### Browser Support
+
+Supports Edge 13+, Safari 9 and latest Chrome and Firefox.
+
+For older browser support check the [legacy](https://github.com/Munawwar/flex-helper/tree/legacy) branch.
+
 ### Documentation
 
 ```
