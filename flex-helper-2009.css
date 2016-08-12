@@ -67,7 +67,7 @@
 }
 /*Stack child items to the cross-axis center*/
 .cross-center {
-    -webkit-box-align: start; /*2009 syntax*/
+    -webkit-box-align: center; /*2009 syntax*/
     -ms-flex-align: center; /*IE10*/
     -webkit-align-items: center;
     align-items: center;
