@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="flex-helper-2009.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+        <style type="text/css">
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+            body {
+                margin: 0 auto;
+                padding: 0;
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                width: 960px;
+            }
+            h2 {
+                text-align: center;
+                font-size: 18px;
+            }
+            h5 {
+                text-align: center;
+                font-size: 12px;
+                margin: 0;
+            }
+            .window {
+                height: 200px;
+                width: 470px;
+                color: white;
+                margin: 10px auto;
+            }
+
+            .blue {
+                background-color: #42a5f5;
+            }
+            .amber {
+                background-color: #ffc400;
+            }
+            .teal {
+                background-color: #26a69a;
+            }
+            .red {
+                background-color: #ef5350;
+            }
+            .cyan {
+                background-color: #4dd0e1;
+            }
+            .orange {
+                background-color: #ffa726;
+            }
+            .pink {
+                background-color: #f06292;
+            }
+            .gray {
+                background-color: #e0e0e0;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Flexbox terminology</h3>
+        <div>
+            For an element with hbox or vbox CSS class, child items will be placed in the direction of the "main" axis.<br/>
+            The main axis for a element with vbox is vertically downwards.<br/>
+            The main axis for a element with hbox is horizontally towards the right.<br/>
+            <br/>
+            The "cross" axis is always perpendicular to the main axis. i.e. for vbox, cross-axis is horizontally towards the right and for
+            hbox, cross axis is vertically downwards.
+        </div>
+        <h3>Example usage</h3>
+        <div class="hbox">
+            <div>
+                <h2>vbox and 3 child items</h2>
+                <div class="window vbox">
+                    <div class="blue">Auto height</div>
+                    <div class="amber flex">Flex</div>
+                    <div class="teal">Auto height</div>
+                </div>
+            </div>
+            <div style="margin-left: 20px;">
+                <h2>hbox and 3 child items</h2>
+                <div class="window hbox">
+                    <div class="blue">Auto width</div>
+                    <div class="amber flex">Flex</div>
+                    <div class="teal">Auto width</div>
+                </div>
+            </div>
+        </div>
+        <div>Note: By default items stretch along the cross-axis.</div>
+        <div>&nbsp;</div>
+
+        <div class="hbox">
+            <div>
+                <h2>vbox main-center</h2>
+                <h5>(single child)</h5>
+                <div class="window gray vbox main-center">
+                    <div class="orange">main-centered div</div>
+                </div>
+            </div>
+            <div style="margin-left: 20px;">
+                <h2>hbox main-center</h2>
+                <h5>(single child)</h5>
+                <div class="window gray hbox main-center">
+                    <div class="orange">main-centered div</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hbox">
+            <div>
+                <h2>vbox cross-center</h2>
+                <h5>(with single child)</h5>
+                <div class="window gray vbox cross-center">
+                    <div class="orange">cross-centered div</div>
+                </div>
+            </div>
+            <div style="margin-left: 20px;">
+                <h2>hbox cross-center</h2>
+                <h5>(with single child)</h5>
+                <div class="window gray hbox cross-center">
+                    <div class="orange">cross-centered div</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hbox">
+            <div>
+                <h2>vbox main-center cross-center</h2>
+                <h5>(single child)</h5>
+                <div class="window gray vbox cross-center main-center">
+                    <div class="orange">cross-centered &amp; main-centered div</div>
+                </div>
+            </div>
+            <div style="margin-left: 20px;">
+                <h2>hbox main-center cross-center</h2>
+                <h5>(single child)</h5>
+                <div class="window gray hbox cross-center main-center">
+                    <div class="orange">cross-centered &amp; main-centered div</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hbox">
+            <div>
+                <h2>vbox cross-stretch</h2>
+                <h5>(single child)</h5>
+                <div class="window gray vbox cross-stretch">
+                    <div class="orange">cross-stretched div</div>
+                </div>
+            </div>
+            <div style="margin-left: 20px;">
+                <h2>hbox cross-stretch</h2>
+                <h5>(single child)</h5>
+                <div class="window gray hbox cross-stretch">
+                    <div class="orange">cross-stretched div</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>hbox inside vbox</h2>
+            <div class="window vbox">
+                <div class="blue">Auto height vbox item</div>
+                <div class="amber flex hbox">
+                    <span class="red vbox">Auto width hbox item</span>
+                    <span class="amber flex vbox">Flex width hbox item</span>
+                    <span class="pink vbox">Auto width hbox item</span>
+                </div>
+                <div class="teal">Auto height vbox item</div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Caveat</h3>
+            <div>
+                If you want body element to expand to viewport, you'll have to set html and body to 100% height.<br/>
+                And then add vbox or hbox css class on body to enable flexbox on child items.<br>
+                <script type="text/html"><head>
+    <style>
+        html, body { height: 100%; }
+    </style>
+</head>
+<body class="vbox">
+    ...
+</body></script>
+
+                <script>
+                    [].slice.call(document.querySelectorAll('script[type="text/html"]')).forEach(function (el) {
+                        var pre = document.createElement('pre'),
+                            html = el.innerHTML.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                        console.log(html);
+                        pre.innerHTML = html;
+                        el.parentNode.replaceChild(pre, el);
+                    });
+                </script>
+                This applies to body and html only since their heights are auto initally and other flexboxes (children) depends on their height.
+            </div>
+            <h3>IE Caveat</h3>
+            <div>
+                IE 10 and 11 needs a pixel or percentage height and width on root element if element is positioned absolute,
+                else vbox will render weird (min-height and min-width doesn't fix them either).<br>
+                The following won't look fine on IE 10,11 (it looks fine on MS Edge):
+                <div style="position: relative;">
+                    <div class="vbox" style="position: absolute; top: 0; left: 30%; min-height: 100px;">
+                        <div class="blue">Auto height vbox item</div>
+                        <div class="amber flex hbox">
+                            <span class="red">Auto width hbox item</span>
+                            <span class="amber flex">Flex width hbox item</span>
+                            <span class="pink">Auto width hbox item</span>
+                        </div>
+                        <div class="teal">Auto height vbox item</div>
+                    </div>
+                </div>
+            </div>
+            <h3>UC Browser</h3>
+            <div>Wrapping of child items (when there isn't enough space to fit child items in single line) doesn't work in UC browser.</div>
+        </div>
+    </body>
+</html>
