@@ -1,33 +1,33 @@
 /*Stack child items vertically*/
 .vbox {
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    display: -ms-flexbox; /*IE 10*/
+    display: -webkit-flex; /*Safari 6.1 to 8*/
     display: flex;
 
     /*Align children vetically*/
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
 
-    -webkit-align-content: flex-start;
     -ms-flex-line-pack: start;
+    -webkit-align-content: flex-start;
     align-content: flex-start;
 
     overflow: hidden; /*Prevent extending beyond boundaries*/
 }
 /*Stack child items horizontally*/
 .hbox {
-    display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
 
     /*Align children horizontally*/
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
+    -webkit-flex-direction: row;
     flex-direction: row;
 
-    -webkit-align-content: flex-start;
     -ms-flex-line-pack: start;
+    -webkit-align-content: flex-start;
     align-content: flex-start;
 
     overflow: hidden; /*Prevent extending beyond boundaries*/
@@ -49,66 +49,66 @@
 
 /*Stack child items to the main-axis start*/
 .main-start {
+    -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
-    -ms-flex-pack: flex-start;
     justify-content: flex-start;
 }
 /*Stack child items to the cross-axis start*/
 .cross-start {
+    -ms-flex-align: start;
     -webkit-align-items: flex-start;
-    -ms-flex-align: flex-start;
     align-items: flex-start;
 
-    -webkit-align-content: flex-start;
     -ms-flex-line-pack: start;
+    -webkit-align-content: flex-start;
     align-content: flex-start;
 }
 /*Stack child items to the main-axis center*/
 .main-center {
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
 }
 /*Stack child items to the cross-axis center*/
 .cross-center {
-    -webkit-align-items: center;
     -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
 
-    -webkit-align-content: center;
     -ms-flex-line-pack: center;
+    -webkit-align-content: center;
     align-content: center;
 }
 /*Stack child items to the main-axis end.*/
 .main-end {
-    -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
     justify-content: flex-end;
 }
 /*Stack child items to the cross-axis end.*/
 .cross-end {
+    -ms-flex-align: end;
     -webkit-align-items: flex-end;
-    -ms-flex-align: flex-end;
     align-items: flex-end;
 
-    -webkit-align-content: flex-end;
     -ms-flex-line-pack: end;
+    -webkit-align-content: flex-end;
     align-content: flex-end;
 }
 /*Stretch child items along the cross-axis*/
 .cross-stretch {
-    -webkit-align-items: stretch;
     -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
     align-items: stretch;
 
-    -webkit-align-content: stretch;
     -ms-flex-line-pack: stretch;
+    -webkit-align-content: stretch;
     align-content: stretch;
 }
 
 /*Wrap items to next line on main-axis*/
 .wrap {
-    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }

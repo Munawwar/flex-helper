@@ -1,0 +1,118 @@
+/**
+ * 2009 syntax is for UC Browser.
+ * -ms- prefix is for IE 10.
+ * 2012 standard with -webkit prefix is for Safari 7-8.
+ * The standard syntax is for IE 11, Safari 9 and latest Chrome, Firefox.
+ */
+.vbox {
+    display: -webkit-box; /*2009 syntax*/
+    display: -ms-flexbox; /*2012 syntax: IE 10*/
+    display: -webkit-flex; /*Safari 7-8*/
+    display: flex; /*new syntax, IE 11, Safari 9*/
+
+    /*Align children vetically*/
+   -webkit-box-orient: vertical; /*2009 syntax*/
+   -ms-flex-direction: column; /*IE 10*/
+   -webkit-flex-direction: column; /*2012 syntax*/
+   flex-direction: column; /*new syntax*/
+
+   overflow: hidden; /*Prevent extending beyond boundaries*/
+}
+.hbox {
+    display: -webkit-box; /*Safari 6*/
+    display: -ms-flexbox; /*IE 10*/
+    /*new syntax*/
+    display: flex;
+
+    /*Align children horizontally*/
+   -webkit-box-orient: horizontal; /*2009 syntax*/
+   -ms-flex-direction: row; /*IE 10*/
+   -webkit-flex-direction: row; /*2012 syntax*/
+   flex-direction: row; /*new syntax*/
+
+   overflow: hidden; /*Prevent extending beyond boundaries*/
+}
+.flex {
+    -webkit-box-flex: 1; /*2009 syntax*/
+    -ms-flex: 1; /*IE10*/
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+/*Stack child items to the main-axis start*/
+.main-start {
+    -webkit-box-pack: start; /*2009 syntax*/
+    -ms-flex-pack: start; /*IE10*/
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+/*Stack child items to the cross-axis start*/
+.cross-start {
+    -webkit-box-align: start; /*2009 syntax*/
+    -ms-flex-align: start; /*IE10*/
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+
+    /*No 2009 syntax*/
+    -ms-flex-line-pack: start; /*IE10*/
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+}
+/*Stack child items to the main-axis center*/
+.main-center {
+    -webkit-box-pack: center; /*2009 syntax*/
+    -ms-flex-pack: center; /*IE10*/
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+/*Stack child items to the cross-axis center*/
+.cross-center {
+    -webkit-box-align: start; /*2009 syntax*/
+    -ms-flex-align: center; /*IE10*/
+    -webkit-align-items: center;
+    align-items: center;
+
+    /*No 2009 syntax*/
+    -ms-flex-line-pack: center; /*IE10*/
+    -webkit-align-content: center;
+    align-content: center;
+}
+/*Stack child items to the main-axis end.*/
+.main-end {
+    -webkit-box-pack: end; /*2009 syntax*/
+    -ms-flex-pack: end; /*IE10*/
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+/*Stack child items to the cross-axis end.*/
+.cross-end {
+    -webkit-box-align: end; /*2009 syntax*/
+    -ms-flex-align: end; /*IE10*/
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+
+    /*No 2009 syntax*/
+    -ms-flex-line-pack: end; /*IE10*/
+    -webkit-align-content: flex-end;
+    align-content: flex-end;
+}
+/*Stretch child items along the cross-axis*/
+.cross-stretch {
+    -webkit-box-align: justify; /*2009 syntax*/
+    -ms-flex-align: stretch; /*IE10*/
+    -webkit-align-items: stretch;
+    align-items: stretch;
+
+    /*No 2009 syntax*/
+    -ms-flex-line-pack: stretch; /*IE10*/
+    -webkit-align-content: stretch;
+    align-content: stretch;
+}
+
+/*Wrap items to next line on main-axis*/
+.wrap {
+    -webkit-box-lines: multiple;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
