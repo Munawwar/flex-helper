@@ -5,6 +5,8 @@
     /*Align children vetically*/
     flex-direction: column;
     align-content: flex-start;
+
+    overflow: hidden; /*Prevent extending beyond boundaries*/
 }
 /*Stack child items horizontally*/
 .hbox {
@@ -13,11 +15,14 @@
     /*Align children horizontally*/
     flex-direction: row;
     align-content: flex-start;
+
+    overflow: hidden; /*Prevent extending beyond boundaries*/
 }
 /*Stretch item along parent's main-axis*/
 .flex {
     flex: 1;
 }
+
 /*Stretch item along parent's cross-axis Overrides any cross-* class of parent*/
 .stretch-self {
     align-self: stretch;
