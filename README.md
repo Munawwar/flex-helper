@@ -9,7 +9,7 @@ Add **flex-helper.css** to your code and start using the CSS classes documented 
 
 ### Browser Support
 
-flex-helper.css supports Edge 13+, Safari 9 and latest Chrome and Firefox.
+flex-helper.css supports IE 11, MS Edge 13+, Safari 9 and latest Chrome and Firefox.
 
 For older browsers support, use:
 

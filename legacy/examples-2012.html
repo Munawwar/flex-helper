@@ -32,6 +32,13 @@
                 color: white;
                 margin: 10px auto;
             }
+            .window-code {
+                width: 470px;
+                overflow: auto;
+            }
+            pre {
+                margin: 5px auto;
+            }
 
             .blue {
                 background-color: #42a5f5;
@@ -58,6 +65,7 @@
                 background-color: #e0e0e0;
             }
         </style>
+        <script src="../example-deps/example-deps.js"></script>
     </head>
     <body>
         <h3>Flexbox terminology</h3>
@@ -73,7 +81,7 @@
         <div class="hbox">
             <div>
                 <h2>vbox and 3 child items</h2>
-                <div class="window vbox">
+                <div class="window vbox" id="eg-1-1">
                     <div class="blue">Auto height</div>
                     <div class="amber flex">Flex</div>
                     <div class="teal">Auto height</div>
@@ -81,87 +89,131 @@
             </div>
             <div style="margin-left: 20px;">
                 <h2>hbox and 3 child items</h2>
-                <div class="window hbox">
+                <div class="window hbox" id="eg-1-2">
                     <div class="blue">Auto width</div>
                     <div class="amber flex">Flex</div>
                     <div class="teal">Auto width</div>
                 </div>
             </div>
         </div>
-        <div>Note: By default items stretch along the cross-axis.</div>
+        <div class="hbox">
+            <div>
+                <script type="text/html" data-class="window-code" data-id="eg-1-1"></script>
+            </div>
+            <div style="margin-left: 20px;">
+                <script type="text/html" data-class="window-code" data-id="eg-1-2"></script>
+            </div>
+        </div>
+        <div style="text-align: center;">Note: By default, child items stretch along the cross-axis.</div>
         <div>&nbsp;</div>
 
         <div class="hbox">
             <div>
                 <h2>vbox main-center</h2>
                 <h5>(single child)</h5>
-                <div class="window gray vbox main-center">
+                <div class="window gray vbox main-center" id="eg-2-1">
                     <div class="orange">main-centered div</div>
                 </div>
             </div>
             <div style="margin-left: 20px;">
                 <h2>hbox main-center</h2>
                 <h5>(single child)</h5>
-                <div class="window gray hbox main-center">
+                <div class="window gray hbox main-center" id="eg-2-2">
                     <div class="orange">main-centered div</div>
                 </div>
             </div>
         </div>
+        <div class="hbox">
+            <div>
+                <script type="text/html" data-class="window-code" data-id="eg-2-1"></script>
+            </div>
+            <div style="margin-left: 20px;">
+                <script type="text/html" data-class="window-code" data-id="eg-2-2"></script>
+            </div>
+        </div>
+        <div>&nbsp;</div>
 
         <div class="hbox">
             <div>
                 <h2>vbox cross-center</h2>
                 <h5>(with single child)</h5>
-                <div class="window gray vbox cross-center">
+                <div class="window gray vbox cross-center" id="eg-3-1">
                     <div class="orange">cross-centered div</div>
                 </div>
             </div>
             <div style="margin-left: 20px;">
                 <h2>hbox cross-center</h2>
                 <h5>(with single child)</h5>
-                <div class="window gray hbox cross-center">
+                <div class="window gray hbox cross-center" id="eg-3-2">
                     <div class="orange">cross-centered div</div>
                 </div>
             </div>
         </div>
+        <div class="hbox">
+            <div>
+                <script type="text/html" data-class="window-code" data-id="eg-3-1"></script>
+            </div>
+            <div style="margin-left: 20px;">
+                <script type="text/html" data-class="window-code" data-id="eg-3-2"></script>
+            </div>
+        </div>
+        <div>&nbsp;</div>
 
         <div class="hbox">
             <div>
                 <h2>vbox main-center cross-center</h2>
                 <h5>(single child)</h5>
-                <div class="window gray vbox cross-center main-center">
+                <div class="window gray vbox cross-center main-center" id="eg-4-1">
                     <div class="orange">cross-centered &amp; main-centered div</div>
                 </div>
             </div>
             <div style="margin-left: 20px;">
                 <h2>hbox main-center cross-center</h2>
                 <h5>(single child)</h5>
-                <div class="window gray hbox cross-center main-center">
+                <div class="window gray hbox cross-center main-center" id="eg-4-2">
                     <div class="orange">cross-centered &amp; main-centered div</div>
                 </div>
             </div>
         </div>
+        <div class="hbox">
+            <div>
+                <script type="text/html" data-class="window-code" data-id="eg-4-1"></script>
+            </div>
+            <div style="margin-left: 20px;">
+                <script type="text/html" data-class="window-code" data-id="eg-4-2"></script>
+            </div>
+        </div>
+        <div>&nbsp;</div>
 
         <div class="hbox">
             <div>
                 <h2>vbox cross-stretch</h2>
                 <h5>(single child)</h5>
-                <div class="window gray vbox cross-stretch">
+                <div class="window gray vbox cross-stretch" id="eg-5-1">
                     <div class="orange">cross-stretched div</div>
                 </div>
             </div>
             <div style="margin-left: 20px;">
                 <h2>hbox cross-stretch</h2>
                 <h5>(single child)</h5>
-                <div class="window gray hbox cross-stretch">
+                <div class="window gray hbox cross-stretch" id="eg-5-2">
                     <div class="orange">cross-stretched div</div>
                 </div>
             </div>
         </div>
+        <div class="hbox">
+            <div>
+                <script type="text/html" data-class="window-code" data-id="eg-5-1"></script>
+            </div>
+            <div style="margin-left: 20px;">
+                <script type="text/html" data-class="window-code" data-id="eg-5-2"></script>
+            </div>
+        </div>
+        <div>&nbsp;</div>
 
         <div>
             <h2>hbox inside vbox</h2>
-            <div class="window vbox">
+            <div class="window vbox" id="eg-6">
                 <div class="blue">Auto height vbox item</div>
                 <div class="amber flex hbox">
                     <span class="red">Auto width hbox item</span>
@@ -171,13 +223,16 @@
                 <div class="teal">Auto height vbox item</div>
             </div>
         </div>
+        <div style="text-align: center;">
+            <script type="text/html" data-id="eg-6" data-style="display: inline-block;text-align: left;"></script>
+        </div>
 
         <div>
             <h2>hbox with wrapping</h2>
-            <div>
+            <div style="text-align: center;">
                 Note: This can replace display: inline-block + vertical-align: middle.
             </div>
-            <div class="window gray hbox main-center cross-center wrap">
+            <div class="window gray hbox main-center cross-center wrap" id="eg-7">
                 <div class="teal">These are items with auto width.&nbsp;</div>
 
                 <div class="amber">Lorem&nbsp;</div>
@@ -188,6 +243,9 @@
                 <div class="amber">consectetur adipiscing&nbsp;</div>
                 <div class="teal">elit.</div>
             </div>
+        </div>
+        <div style="text-align: center;">
+            <script type="text/html" data-id="eg-7" data-style="display: inline-block;text-align: left;"></script>
         </div>
 
         <div>
@@ -205,16 +263,30 @@
 </body></script>
 
                 <script>
-                    [].slice.call(document.querySelectorAll('script[type="text/html"]')).forEach(function (el) {
+                    Li.slice(document.querySelectorAll('script[type="text/html"]')).forEach(function (el) {
                         var pre = document.createElement('pre'),
-                            html = el.innerHTML.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-                        console.log(html);
+                            html;
+                        if (el.getAttribute('data-class')) {
+                            pre.className = el.getAttribute('data-class');
+                        }
+                        if (el.getAttribute('data-style')) {
+                            pre.setAttribute('style', el.getAttribute('data-style'));
+                        }
+                        if (el.getAttribute('data-id')) {
+                            var target = document.getElementById(el.getAttribute('data-id'));
+                            target.removeAttribute('id');
+                            html = window.beautifyHTML(target.outerHTML);
+                        } else {
+                            html = el.innerHTML;
+                        }
+                        html = html.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
                         pre.innerHTML = html;
                         el.parentNode.replaceChild(pre, el);
                     });
                 </script>
                 This applies to body and html only since their heights are auto initally and other flexboxes (children) depends on their height.
             </div>
+
             <h3>IE Caveat</h3>
             <div>
                 IE 10 and 11 needs a pixel or percentage height and width on root element if element is positioned absolute,
