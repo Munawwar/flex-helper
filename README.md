@@ -52,4 +52,4 @@ See flexbox-2012.css examples [here](http://munawwar.github.io/flex-helper/legac
 See flexbox-2009.css examples [here](http://munawwar.github.io/flex-helper/legacy/examples-2009.html).
 
 ### RTL support
-Setting CSS `direction: rtl;` on body tag should cause all rows to be reversed in order. This is part of the flexbox specification. Nothing special needs to be done. If you have any case where row shouldn't be reveresed then set dir="ltr" on the hbox div.
+Setting CSS `direction: rtl;` on body tag should cause all rows to be reversed in order. This is part of the flexbox specification. Nothing special needs to be done. If you have any case where row shouldn't be reversed, then set dir="ltr" on the hbox div.
