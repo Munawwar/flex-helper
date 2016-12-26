@@ -30,6 +30,12 @@
    -webkit-flex-direction: row; /*2012 syntax*/
    flex-direction: row; /*new syntax*/
 
+    /*Wrap items to next line on main-axis*/
+    -webkit-box-lines: multiple;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+
    overflow: hidden; /*Prevent extending beyond boundaries*/
 }
 .flex {
@@ -115,4 +121,11 @@
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+}
+/*Don't wrap items to next line on main-axis*/
+.nowrap {
+    -webkit-box-lines: single;
+    -ms-flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }

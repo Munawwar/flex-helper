@@ -30,6 +30,11 @@
     -webkit-align-content: flex-start;
     align-content: flex-start;
 
+    /*Wrap items to next line on main-axis*/
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+
     overflow: hidden; /*Prevent extending beyond boundaries*/
 }
 /*Stretch item along parent's main-axis*/
@@ -112,4 +117,10 @@
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+}
+/*Don't wrap items to next line on main-axis*/
+.nowrap {
+    -ms-flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }

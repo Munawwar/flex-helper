@@ -39,7 +39,8 @@ cross-stretch - Stretch child items along the cross-axis
 stretch-self  - Stretch item along parent's cross-axis. Overrides any cross-* class behavior on parent.
 center-self   - Centers item along parent's cross-axis. Overrides any cross-* class behavior on parent.
 
-wrap          - Wrap child items to next line on main-axis
+wrap          - Wrap child items to next line on main-axis. hbox wraps by default so no need to add this classes for hbox.
+nowrap        - Prevent wrapping of items to next line on main-axis.
 ```
 
 ### Documentation with examples
