@@ -53,4 +53,12 @@ See flexbox-2012.css examples [here](http://munawwar.github.io/flex-helper/legac
 See flexbox-2009.css examples [here](http://munawwar.github.io/flex-helper/legacy/examples-2009.html).
 
 ### RTL support
+
 Setting CSS `direction: rtl;` on body tag should cause all rows to be reversed in order. This is part of the flexbox specification. Nothing special needs to be done. If you have any case where row shouldn't be reversed, then set dir="ltr" on the hbox div.
+
+### BUGS!
+
+One notable bug in IE 10-11, is that using min-height/min-width along with flex box doesn't work as expected.
+
+There are other bugs documented at [flexbox-bugs](https://github.com/philipwalton/flexbugs).
+Note: However flex-grid doesn't use all of the flexbox syntax, so some of them are not relevant.
