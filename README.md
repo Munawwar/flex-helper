@@ -62,4 +62,4 @@ Setting CSS `direction: rtl;` on body tag should cause all rows to be reversed i
 One notable bug in IE 10-11, is that using min-height/min-width along with flex box doesn't work as expected.
 
 There are other bugs documented at [flexbox-bugs](https://github.com/philipwalton/flexbugs).
-Note: However flex-grid doesn't use all of the flexbox syntax, so some of them are not relevant.
+Note: However flex-helper doesn't use all of the flexbox syntax. So some of them are not relevant.
