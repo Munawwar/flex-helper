@@ -1,0 +1,25 @@
+{
+  "name": "flex-helper",
+  "version": "2.0.0",
+  "description": "CSS3 flexbox helper classes.",
+  "main": "flex-helper.css",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Munawwar/flex-helper.git"
+  },
+  "keywords": [
+    "flexbox"
+  ],
+  "author": "Munawwar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Munawwar/flex-helper/issues"
+  },
+  "homepage": "https://github.com/Munawwar/flex-helper#readme"
+}
